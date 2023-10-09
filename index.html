@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Explore the world of Quotations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        animation:  bg infinite 15s ease-in-out;
+        background-size: 200% 200%;
+    }
+
+    @keyframes bg{
+        0% {
+            background-position: 0% 25%;
+        }
+        25%{
+            background-position: 25% 50%;
+        }
+        50%{
+            background-position: 50% 100%;
+        }
+        75%{
+            background-position: 25% 50%;
+        }
+        100%{
+            background-position: 0% 100%;
+        }
+    }
+    .main{
+        width: 80%;
+    }
+</style>
+<body>
+    
+<div class="flex justify-between item-center bg-white rounded-4 main">
+    <div class="jumbotron p-5  ">
+        <h1 class="display-4">Explore Sad Quotes</h1>
+        <p id="quote"></p>
+        <hr class="my-4">
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" onclick="GenerateQuotes()" role="button">Generate Quote</a>
+        </p>
+      </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
